@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <group android:id="@+id/menugroup1" >
+        <item
+            android:id="@+id/menu1"
+            android:title="Добавить папку"/>
+        <item
+            android:id="@+id/menu2"
+            android:title="Добавить продукт">
+        </item>
+    </group>
+
+</menu>

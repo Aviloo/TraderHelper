@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Empty</string>
+    <string name="create_folder_activity">Добавить папку</string>
+    <string name="create_element_activity">Добавить продукт</string>
+    <string name="home_nav_line">Главная</string>
+    <string name="provider_nav_line">Продукция</string>
+    <string name="salary_nav_line">Зарплата</string>
+    <string name="ip_nav_line">Мои ИП</string>
+    <string name="settings_nav_line">Настройки</string>
+</resources>

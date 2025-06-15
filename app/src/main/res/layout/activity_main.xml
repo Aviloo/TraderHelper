@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
+
+
+    <Button
+        android:id="@+id/provider_button"
+        android:layout_width="81dp"
+        android:layout_height="48dp"
+        android:text="≡"
+        android:backgroundTint="@color/orange"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/money_button"
+        android:layout_width="81dp"
+        android:layout_height="48dp"
+        android:backgroundTint="@color/orange"
+        android:text="₽"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.951"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="408dp"
+        android:layout_height="513dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/main_promo_text"
+        android:layout_width="236dp"
+        android:layout_height="29dp"
+        android:text="Акционные товары:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.605"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.253"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        android:id="@+id/drawer_layout"
+        tools:context=".MainActivity"
+        android:fitsSystemWindows="true"
+        tools:openDrawer="start"/>
+
+        <com.google.android.material.navigation.NavigationView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+            tools:ignore="MissingConstraints"
+            android:id="@+id/nav_view"
+            app:menu="@menu/navigation_menu"
+            android:layout_gravity="start"
+            app:headerLayout="@layout/header"
+            />
+
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
