@@ -4,20 +4,26 @@
     <group android:checkableBehavior="single">
 
     <item android:id="@+id/home_nav_line"
-        android:title="@string/home_nav_line"/>
+        android:title="@string/home_nav_line"
+        android:icon="@drawable/home_icon"/>
 
     <item android:id="@+id/provider_nav_line"
-        android:title="@string/provider_nav_line"/>
+        android:title="@string/provider_nav_line"
+        android:icon="@drawable/product_icon"/>
 
     <item android:id="@+id/salary_nav_line"
-        android:title="@string/salary_nav_line"/>
+        android:title="@string/salary_nav_line"
+        android:icon="@drawable/salary_icon"/>
 
     <item android:id="@+id/ip_nav_line"
-        android:title="@string/ip_nav_line"/>
+        android:title="@string/ip_nav_line"
+        android:icon="@drawable/person_icon"/>
 
     </group>
-
-    <item android:id="@+id/settings_nav_line"
-        android:title="@string/settings_nav_line"/>
+<!--    -->
+<!--    <group>-->
+<!--        <item android:id="@+id/settings_nav_line"-->
+<!--            android:title="@string/settings_nav_line"/>-->
+<!--    </group>-->
 
 </menu>

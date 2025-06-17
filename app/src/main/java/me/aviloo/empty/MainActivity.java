@@ -9,7 +9,8 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import me.aviloo.empty.Utils.ActivityUtil;
+import me.aviloo.empty.ui.NavigationActivity;
+import me.aviloo.empty.ui.SalaryActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,22 +19,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button button = findViewById(R.id.provider_button);
-        Button salary_button = findViewById(R.id.money_button);
-        ;
-        buttonAnimation(button);
+        Button button = findViewById(R.id.navigation_button);
         button.setOnClickListener(viewClickListener);
-
-        buttonAnimation(salary_button);
-        salary_button.setOnClickListener(viewClickSalaryListener);
     }
 
     View.OnClickListener viewClickListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
             Intent intent = new Intent(MainActivity.this,
-                    ProviderActivity.class);
-            ActivityUtil.addCurrentActivity(this.getClass());
+                    NavigationActivity.class);
             startActivity(intent);
 
         }
@@ -70,3 +64,4 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 }
+

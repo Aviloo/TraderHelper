@@ -21,10 +21,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".CreateElementActivity"/>
-        <activity android:name=".CreateFolderActivity"/>
-        <activity android:name=".SalaryActivity"/>
-        <activity android:name=".ProviderActivity"/>
+        <activity android:name=".ui.CreateActivity.CreateElementActivity"/>
+        <activity android:name=".ui.CreateActivity.CreateFolderActivity"/>
+        <activity android:name=".ui.SalaryActivity"/>
+        <activity android:name=".ui.ProviderActivity"/>
+        <activity android:name=".ui.NavigationActivity"/>
+        <activity android:name=".ui.PersonActivity"/>
+        <activity android:name=".ui.CreateActivity.CreateEmployerActivity"/>
     </application>
 
 </manifest>
